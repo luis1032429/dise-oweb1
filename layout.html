@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="layout.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Tienda de Electrónicos</title>
+
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Cada sección: dos columnas (texto + imagen) */
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 60px 8%;
+    }
+
+    /* Texto */
+    h1, h2 { font-size: 36px; margin: 0 0 15px; }
+    p { color: #666; }
+
+    /* Botón */
+    a {
+      display: inline-block;
+      background: orange;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    /* Imágenes */
+    img { width: 300px; max-width: 100%; }
+
+    /* Sección oscura */
+    .oscura { background: #222; color: white; }
+    .oscura p { color: #ccc; }
+
+    /* En celular: una sola columna */
+    @media (max-width: 700px) {
+      section { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. Portada -->
+  <section>
+    <div>
+        <h1>InnovaTech</h1>
+      <h1>La mejor tecnología al mejor precio</h1>
+      <p>Celulares, laptops y accesorios con garantía.</p>
+      <a href="#">Ver productos</a>
+    </div>
+    <img src="photo-1591337676887-a217a6970a8a.avif" alt="Celular">
+  </section>
+
+  <!-- 2. Sección oscura -->
+  <section class="oscura">
+    <img src="fotocumooo.avif" alt="Laptop">
+    <div>
+      <h2>Laptops potentes</h2>
+      <p>Perfectas para trabajar, estudiar o jugar.</p>
+      <a href="#">Ver laptops</a>
+    </div>
+  </section>
+
+  <!-- 3. Sección clara -->
+  <section>
+    <div>
+      <h2>Accesorios</h2>
+      <p>Audífonos, cargadores, relojes y más.</p>
+      <a href="#">Ver accesorios</a>
+    </div>
+    <img src="audiiii.avif" alt="Reloj">
+  </section>
+
+</body>
+</html>
